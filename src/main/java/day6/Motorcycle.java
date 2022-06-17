@@ -1,4 +1,5 @@
-package day5;
+package day6;
+
 
 public class Motorcycle {
     public int age;
@@ -21,6 +22,16 @@ public class Motorcycle {
 
     public String getColour() {
         return colour;
+    }
+
+    void info() {
+        System.out.println("Это мотоцикл");
+    }
+
+    public int yearDifference(int inputYear) {
+
+        inputYear = inputYear - getAge();
+        return Math.abs(inputYear);
     }
 }
 

@@ -1,10 +1,9 @@
-package day5;
+package day6;
 
 public class Car {
     public int age;
     public String model;
     public String colour;
-
 
     public int getAge() {
         return age;
@@ -30,7 +29,13 @@ public class Car {
         this.colour = colour;
     }
 
-    public void info() {
+    void info(){
+        System.out.println("Это автомобиль");
+    }
+
+    public int yearDif (int year){
+        year = year-getAge();
+        return Math.abs(year);
     }
 }
 
